@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{% block title %}Styleguide 2{% endblock %}</title>
+        
+        <link rel="stylesheet" href="vendor/foundation.min.css"/>
+        <link rel="stylesheet" href="vendor/slick.css"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="https://use.typekit.net/mvc3cdb.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="top-nav">
+            <div class="top-nav__nav-group top-nav__nav-group--left">
+                <span class="top-nav__item top-nav__menu-trigger">menu</span>
+            </div>
+            
+            <a class="top-nav__logo" href="./">
+                <img src="images/govlab-logo-white.png" alt="">
+            </a>
+
+            <div class="top-nav__nav-group top-nav__nav-group--right">
+                <span class="top-nav__item top-nav__menu-trigger js-nav-trigger">more_vert</span>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <a href="./" class="main-nav__item">Home</a>
+            <a href="all-elements.html" class="main-nav__item">All Elements</a>
+            <a href="tldr.html" class="main-nav__item">TLDR</a>
+        </nav>
+
+        
+        {% block content %}{% endblock %}
+
+        <footer class="site-footer">
+            
+        </footer>
+
+        <div id="overlay"></div>
+        <script src="./vendor/jquery-2.1.4.min.js"></script>
+        <script src="./vendor/slick.min.js"></script>
+        <script src="./scripts.js"></script>
+    </body>
+</html>

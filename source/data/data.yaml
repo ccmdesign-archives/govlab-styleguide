@@ -1,0 +1,171 @@
+companies:
+  - name: Turner Construction
+    type: DOMESTIC BUSINESS CORPORATION
+    industry: Construction Management, Consulting
+  - name: Turner Construction
+    type: DOMESTIC BUSINESS CORPORATION
+    industry: Construction Management, Consulting
+  - name: Hunt construction
+    type: Domestic For-Profit Corporation
+    industry: Construction Management
+  - name: M.A. Mortenson Co
+    type: Domestic For-Profit Corporation
+    industry: Construction Management
+  - name: Tishman Construction
+    type: Corporation
+    industry: 
+  - name: Berwald Roofing Co. 
+    type: Business Corporation (Domestic)
+    industry: Construction Management
+  - name: Clau Chin Construction L.L.C
+    type: Domestic Corp
+    industry: Construction Management
+  - name: Harco Construction LLC
+    type: DOMESTIC LIMITED LIABILITY COMPANY
+    industry: Construction Management
+
+questions:
+  - Do you feel safe on the site that you currently work?
+  - Do you feel adequately trained?
+  - Were you part of a site-specific health & safety program?
+  - Were you part of a worker-to-worker observation program?
+  - Are there on site medical facilities?
+  - Is there a 100% steel-toed boots policy?
+  - Is there at least one or more safety professionals on your worksite?
+  - Do you feel you’re allowed to discuss bad conditions on your site?
+  - Do you feel that management takes safety as foremost?
+  - Does management take appropriate action to correct a bad situation?
+  - Who are the sub-contractors on this site?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- name: Turner Construction
+  type: DOMESTIC BUSINESS CORPORATION
+  industry: Construction Management, Consulting
+  founded: 1902
+  headquarters: NEW YORK
+  revenue: $10 billion (2014)
+  number_of_employees: 5,200 (2014)
+  risk_score: 45
+  sites:
+    - address: 100 Huron st, Brooklyn, NY 11211
+      risk_score: 30
+      reports:
+        - question: Do you feel safe where you work?
+          result: true
+        - question: Do you feel adequately trained?
+          result: false
+        - question: Were you part of a site-speci c health & safety program?
+          result: false
+    - address: 100 Huron st, Brooklyn, NY 11211
+      risk_score: 30
+      reports:
+        - question: Do you feel safe where you work?
+          result: true
+        - question: Do you feel adequately trained?
+          result: true
+        - question: Were you part of a site-speci c health & safety program?
+          result: true
+          
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- name: Hunt construction
+  type: Domestic For-Profit Corporation
+  industry: Construction Management
+  founded: 1944
+  headquarters: INDIANAPOLIS
+  revenue: 
+  number_of_employees: 675
+  subsidiaries:
+
+- name: M.A. Mortenson Co
+  type: Domestic For-Profit Corporation
+  industry: Construction Management
+  founded: 1954
+  headquarters: Minneapolis
+  revenue: 
+  number_of_employees: 
+  subsidiaries: 
+
+- name: Tishman Construction
+  type: Corporation
+  industry: 
+  founded: 1965
+  headquarters: Delaware
+  revenue: 
+  number_of_employees: 
+  subsidiaries: 
+
+- name: Berwald Roofing Co. 
+  type: Business Corporation (Domestic)
+  industry: 
+  founded: 1965
+  headquarters: Minnesota 
+  revenue: 
+  number_of_employees: 
+  subsidiaries: 
+
+- name: Clau Chin Construction L.L.C
+  type: Domestic Corp
+  industry: 
+  founded: 2007
+  headquarters: Nebraska
+  revenue: 
+  number_of_employees: 
+  subsidiaries: 
+
+- name: Harco Construction LLC
+  type: DOMESTIC LIMITED LIABILITY COMPANY
+  industry: 
+  founded: 2009
+  headquarters: NEW YORK
+  revenue: 
+  number_of_employees: 
+  founded: 2004
+  headquarters: Nebraska (US)
+  revenue: 
+  subsidiaries: 

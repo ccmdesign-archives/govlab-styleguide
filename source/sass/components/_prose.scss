@@ -1,0 +1,84 @@
+.prose {
+  font-family: $secondary-font;
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: .4px;
+  line-height: 1.62;
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $main-font;
+    margin-top: 1em;
+    margin-bottom: .6em;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1em;
+    font-weight: 100;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    line-height: 1.2em;
+  }
+
+  h5 {
+    font-size: 1rem;
+    line-height: 1.3em; 
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 1.3em; 
+    font-weight: bold; 
+  }
+
+  a {
+    color: $accent-color;
+    text-decoration: none;
+    @extend .u-transition;
+
+    &:hover { 
+      @extend .u-transition;
+      background-color: rgba($accent-color, .15);
+    }
+  }
+}
+
+table {
+  font-family: $main-font;
+  font-size: 1rem;
+  font-weight: 300;
+
+  p {
+    margin-top: .3em;
+    margin-bottom: .6em;
+    line-height: 1.4em;
+  }
+
+  th, td {
+    padding: 5px 10px ;
+  }
+
+  th {
+    background-color: $main-color;
+    color: $white;
+    text-align: left;
+  }
+
+  td { vertical-align: top; }
+}
