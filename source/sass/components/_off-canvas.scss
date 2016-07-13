@@ -13,7 +13,7 @@
     @include breakpoint($tablet) { left: -48%; }
     @include breakpoint($desktop) { left: -28%; }
 
-    @include transition;
+    @extend .u-transition;
 
     &.m-active {
         left: 0;

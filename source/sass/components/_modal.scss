@@ -43,7 +43,7 @@ Styleguide 3.2
     box-shadow: 0 0 10px $gray-50;
 
     padding: 30px 45px;
-    @include transition;
+    @extend .u-transition;
     z-index: 11;
 
     .e-content {
@@ -63,7 +63,7 @@ Styleguide 3.2
   /* Regular size and visible */
   transform: scale(1); /* prefix me */
   opacity: 1;
-  @include transition;
+  @extend .u-transition;
 
   /* Clickable */
   pointer-events: auto;

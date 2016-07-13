@@ -526,7 +526,7 @@ p q r s t u v w x y z { | } ~</samp></pre>
 Styleguide 2.3.3
 */
 pre {
-    background-color: $gray-10;
+    background-color: rgba($black, .1);
     padding: 10px 20px;
 }
 
@@ -626,12 +626,12 @@ table {
     width: 100%;
 
     th {
-        background-color: $gray-10;
+        background-color: rgba($black, .1);
         text-transform: uppercase;
     }
 
     tr { text-align: left; }
-    tr:nth-child(2n) { background-color: $gray-05; }
+    tr:nth-child(2n) { background-color: rgba($black, .05); }
 
     td, th {
         padding: 8px;

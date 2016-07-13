@@ -183,7 +183,7 @@ Styleguide 4.6
         width: 100%;
         padding: 10px 15px;
         margin-bottom: 15px;
-        @include transition;
+        @extend .u-transition;
     }
 
 
@@ -192,7 +192,7 @@ Styleguide 4.6
     input[type="password"]:focus,
     textarea:focus {
         background-color: $gray-20;
-        @include transition;
+        @extend .u-transition;
     }
 
     input[type="submit"] {
@@ -220,21 +220,21 @@ Styleguide 4.6
     }
 
     input[type="checkbox"] + label:before {
-        @include material-icons;
+        @extend .u-material-icons;
         content: 'check_box_outline_blank';
     }
 
     input[type="checkbox"]:checked + label:before {
-        @include material-icons;
+        @extend .u-material-icons;
         content: 'check_box';
     }
 
     input[type="radio"] + label:before {
-        @include material-icons;
+        @extend .u-material-icons;
         content: 'radio_button_unchecked';
     }
     input[type="radio"]:checked + label:before {
-        @include material-icons;
+        @extend .u-material-icons;
         content: 'radio_button_checked';
     }
 
@@ -248,10 +248,10 @@ Styleguide 4.6
         padding: 0 15px;
         margin-bottom: 15px;
         position: relative;
-        @include transition;
+        @extend .u-transition;
 
         &::before {
-            @include material-icons;
+            @extend .u-material-icons;
             content: 'keyboard_arrow_down';
             position: absolute;
             right: 0;
@@ -278,7 +278,7 @@ Styleguide 4.6
 
         &:hover {
             background-color: $gray-20;
-            @include transition;
+            @extend .u-transition;
         }
     }
 
@@ -292,7 +292,7 @@ Styleguide 4.6
             }
             &:focus {
                 background-color: $white-20;
-                @include transition;
+                @extend .u-transition;
             }
         }
 

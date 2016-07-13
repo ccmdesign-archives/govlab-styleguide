@@ -22,6 +22,8 @@
 
 .u-transition { transition: all .4s ease; }
 
+
+
 .u-circle {
   overflow: hidden;
   border-radius: 50%;
@@ -48,4 +50,11 @@
    display: block;
    height: 0;
    clear: both;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
 }

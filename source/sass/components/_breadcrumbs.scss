@@ -1,5 +1,5 @@
 .b-breadcrumbs {
-    @include wrap;
+    @extend .u-wrapper;
     padding-bottom: 20px;
 
     a, 

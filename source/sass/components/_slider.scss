@@ -206,20 +206,20 @@ Styleguide 3.6
         z-index: 1;
         background-color: transparent;
         border: 0;
-        @include material-icons;
+        @extend .u-material-icons;
         color: transparent;
 
         &:before,
         &:after {
             color: $white_20;
             font-size: 60px;
-            @include transition;
+            @extend .u-transition;
         }
 
         &:hover:before,
         &:hover:after {
             color: $white_60;
-            @include transition;
+            @extend .u-transition;
         }
     }
 

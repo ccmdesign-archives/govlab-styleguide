@@ -24,7 +24,7 @@ Styleguide 3.3
         color: currentColor;
         vertical-align: bottom;
         background-color: transparent;
-        @include transition;
+        @extend .u-transition;
         border: 0;
         display: inline-block;
         margin-bottom: 0;

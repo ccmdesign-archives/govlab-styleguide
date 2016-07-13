@@ -1,87 +1,39 @@
-.top-nav {
-    background-color: rgba($black, .8);
-    color: $white;
-    position: relative;
-    text-align: center;
-    @extend .u-clearfix;
+.u-button {
+    padding: 12px 15px;
+    cursor: pointer;
 
-    &__item {
-        padding: 10px;
-        display: inline-block;
-    }
-
-    a { color: currentColor; }
-
-    &__logo {
-        img {
-            padding: 5px;    
-            max-height: 45px;
-
-            @include breakpoint($desktop) {
-                padding: 10px;
-                max-height: 55px;
-            }
-        }
-    }
-
-    &__nav-group--left { float: left; }
-    &__nav-group--right { float: right; }
-
-    &__menu-trigger {
-        display: none;
-        @extend .u-material-icons;
-        @include breakpoint($touch) { display: block; }
+    &:hover {
+        background-color: rgba($white, .1);
     }
 }
 
-.main-nav {
+.top-bar {
     background-color: $main-color;
+    @extend .u-clearfix;
     text-align: center;
+    height: 50px;
+    display: flex;
 
-    &__item {
-        display: inline-block;
-        padding: 10px 15px;
-        text-decoration: none;
-        margin: 0 -2px;
+    &__button {
+        @extend .u-button;
+        @extend .u-material-icons;
         color: $white;
-        text-transform: uppercase;
-        font-weight: 600;
-
-        &:hover {
-            background-color: rgba($white, .1);
-        }
     }
-}
-
-.dropdown {
-    padding: 0;
-    position: relative;
-
-    @include breakpoint($desktop) { 
-        display: none; 
-    }
-
-    &__container {
-        position: absolute;
-        top: 0;
-        padding: 0;
-        background-color: $purple;
+    
+    &__logo {
+        flex: 1;
+        padding: 4px;
         margin: 0;
-        width: 50vw;
+        display: inline-block;
+        height: 100%;
+
+
     }
 
-    &__item {
-        list-style: none;
-        text-align: left;
-        padding: 5px 15px;
-
-        &:hover {
-            background-color: rgba($black, .1);
-        }
-
-        a {
-            text-decoration: none;
-            display: inline-block;
-        }
+    &__logo img {
+        height: 100%;
+        
     }
 }
+
+

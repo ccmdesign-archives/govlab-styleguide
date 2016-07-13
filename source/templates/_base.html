@@ -15,32 +15,48 @@
     </head>
 
     <body>
-        <header class="top-nav">
-            <div class="top-nav__nav-group top-nav__nav-group--left">
-                <span class="top-nav__item top-nav__menu-trigger">menu</span>
-            </div>
-            
-            <a class="top-nav__logo" href="./">
-                <img src="images/govlab-logo-white.png" alt="">
-            </a>
-
-            <div class="top-nav__nav-group top-nav__nav-group--right">
-                <span class="top-nav__item top-nav__menu-trigger js-nav-trigger">more_vert</span>
-            </div>
+        <header class="top-bar">
+            <span class="top-bar__button">menu</span>
+            <a class="top-bar__logo" href="./"><img src="images/govlab-logo-white.png" alt="The GovLab"></a>
+            <span class="top-bar__button">more_vert</span>
         </header>
-
-        <nav class="main-nav">
-            <a href="./" class="main-nav__item">Home</a>
-            <a href="all-elements.html" class="main-nav__item">All Elements</a>
-            <a href="tldr.html" class="main-nav__item">TLDR</a>
-        </nav>
-
         
+        
+
+
         {% block content %}{% endblock %}
 
-        <footer class="site-footer">
-            
-        </footer>
+        <footer class='b-footer'>
+        <div class="row">
+            <div class="large-10 large-centered columns">
+                <div class="row">
+                    <div class="e-content m-sections medium-4 column">
+                        <h4>Sections</h4>
+                        <!-- Add generated sections here -->
+                    </div>
+                    <div class="e-content medium-4 column">
+                        <h4>Lead Supporters</h4>
+                        <a class="e-partner-logo" href="https://www.macfound.org/" tagret="_blank"><img src="img/partners/macarthur-logo-white.png" alt="MacArthur Foundation"></a>
+                        <a class="e-partner-logo" href="http://knightfoundation.org/" tagret="_blank"><img src="img/partners/knight-logo-white.png" alt="Knight Foundation"></a>
+                        <a class="e-partner-logo m-google" href="http://google.org/" tagret="_blank"><img src="img/partners/google-org.png" alt="Google.org"></a>
+                    </div>
+                    <div class="e-content medium-4 column">
+                        <h4>Based at</h4>
+                        <a class="e-partner-logo" href="http://engineering.nyu.edu/tandon" tagret="_blank"><img src="img/partners/nyu.png" alt="NYU Tandon School of Engineering - New York University"></a>
+                        <a class="e-partner-logo m-mit" href="https://www.media.mit.edu/" tagret="_blank"><img src="img/partners/mit-logo-white.png" alt="MIT Media Lab"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="b-copyright">
+        <div class="row">
+            <div class="large-10 large-centered columns">
+                <a class="e-cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> <br> <a href="#">Copyright Infringement Information</a>.
+            </div>
+        </div>
+    </div>
 
         <div id="overlay"></div>
         <script src="./vendor/jquery-2.1.4.min.js"></script>

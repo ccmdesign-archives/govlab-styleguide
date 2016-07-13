@@ -49,18 +49,18 @@ Styleguide 3.1
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: $gray-10;
+    background-color: rgba($black, .1);
     cursor: pointer;
     padding: 15px 20px;
     text-decoration: none;
 
-    @include transition;
+    @extend .u-transition;
 
 
     &:hover {
         text-decoration: none;
-        @include transition;
-        background-color: $gray-20;
+        @extend .u-transition;
+        background-color: rgba($black, .2);
     }
 
     @include breakpoint($mobile-only) {
@@ -88,35 +88,35 @@ Styleguide 3.1
     background-color: $purple;
     color: $white;
 
-    &:hover { background-color: $purple-40k; }
+    &:hover { background-color: darken($purple, 6); }
 }
 
 .b-button.m-teal {
     background-color: $teal;
     color: $white;
 
-    &:hover { background-color: $teal-20k; }
+    &:hover { background-color: darken($teal, 4); }
 }
 
 .b-button.m-orange {
     background-color: $orange;
     color: $white;
 
-    &:hover { background-color: $orange-20k; }
+    &:hover { background-color: darken($orange, 4); }
 }
 
 .b-button.m-blue {
     background-color: $blue;
     color: $white;
 
-    &:hover { background-color: $blue-20k; }
+    &:hover { background-color: darken($blue, 4); }
 }
 
 .b-button.m-black {
     background-color: $black;
     color: $white;
 
-    &:hover { background-color: $gray-90; }
+    &:hover { background-color: rgba($black, .9); }
 }
 
 .b-button.m-naked {
@@ -128,8 +128,8 @@ Styleguide 3.1
     // @include breakpoint($mobile-only) { background-color: $gray-20; }
 
     &:hover {
-        background-color: $gray-20;
-        @include transition;
+        background-color: rgba($black, .2);
+        @extend .u-transition;
     }
 }
 

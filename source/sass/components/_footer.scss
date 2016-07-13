@@ -71,11 +71,11 @@ Styleguide 5.3
                 padding: 10px 0;
                 max-height: 60px;
                 opacity: .5;
-                @include transition;
+                @extend .u-transition;
 
                 &:hover {
                     opacity: 1;
-                    @include transition;
+                    @extend .u-transition;
                 }
             }
 
@@ -99,7 +99,7 @@ Styleguide 5.3
         text-decoration: none;
         margin-left: -10px;
         margin-right: 10px;
-        @include transition;
+        @extend .u-transition;
         text-align: left;
 
 
@@ -111,7 +111,7 @@ Styleguide 5.3
         &:hover {
             color: $white;
             background-color: $white-10;
-            @include transition;
+            @extend .u-transition;
 
         }
     }
