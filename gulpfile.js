@@ -51,8 +51,6 @@ gulp.task('nunjucks', function() {
 
   // Gets .html and .nunjucks files in pages
   return gulp.src('source/templates/**/[^_]*.+(html|nunjucks)')
-    // Adding data to Nunjucks
-    .pipe(data(function() { return require('./source/data/data.json'); }))
     // Renders template with nunjucks
     .pipe(nunjucksRender({path: 'source/templates'}))
     // output files in app folder

@@ -26,4 +26,10 @@ $(document).ready(function() {
     $('.m-next').click(function() {
         $(this).closest('.e-testimonial-item').slick('slickNext');
     });
+
+    $('.language-markup').each(function() {
+        var $obj = $($(this).data('markup'));
+
+        $(this).text($obj.html());
+    });
 }); // doc.ready
