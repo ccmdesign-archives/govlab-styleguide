@@ -22,8 +22,6 @@
 
 .u-transition { transition: all .4s ease; }
 
-
-
 .u-circle {
   overflow: hidden;
   border-radius: 50%;
@@ -40,9 +38,8 @@
   display: none;
   opacity: .1;
 
-  &--active { display: block; } 
+  &--active { display: block; }
 }
-
 
 .u-clearfix:after {
    content: " "; /* Older browser do not support empty content */

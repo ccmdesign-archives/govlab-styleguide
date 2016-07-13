@@ -19,21 +19,16 @@
         @extend .u-material-icons;
         color: $white;
     }
-    
+
     &__logo {
         flex: 1;
         padding: 4px;
         margin: 0;
         display: inline-block;
         height: 100%;
-
-
     }
 
     &__logo img {
         height: 100%;
-        
     }
 }
-
-

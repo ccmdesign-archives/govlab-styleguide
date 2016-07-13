@@ -45,6 +45,7 @@ Markup:
 
 Styleguide 3.1
 */
+
 .b-button {
     display: inline-block;
     text-transform: uppercase;
@@ -55,7 +56,6 @@ Styleguide 3.1
     text-decoration: none;
 
     @extend .u-transition;
-
 
     &:hover {
         text-decoration: none;

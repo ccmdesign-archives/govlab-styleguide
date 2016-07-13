@@ -19,7 +19,7 @@
     margin-bottom: .2em;
     line-height: 1;
     text-shadow: 1px 1px 4px rgba($black, .1);
-    
+
   }
 
   h2 {
@@ -38,8 +38,8 @@
     text-transform: uppercase;
   }
 
-  a { 
-    color: currentColor; 
+  a {
+    color: currentColor;
     text-decoration: none;
   }
 }
@@ -89,15 +89,15 @@
 
   h5 {
     font-size: 1rem;
-    line-height: 1.3em; 
+    line-height: 1.3em;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   h6 {
     font-size: 1rem;
-    line-height: 1.3em; 
-    font-weight: bold; 
+    line-height: 1.3em;
+    font-weight: bold;
   }
 
   a {
@@ -105,7 +105,7 @@
     text-decoration: none;
     @extend .u-transition;
 
-    &:hover { 
+    &:hover {
       @extend .u-transition;
       background-color: rgba($accent-color, .15);
     }
@@ -135,8 +135,8 @@ table {
     text-align: left;
   }
 
-  td { 
-    vertical-align: top; 
+  td {
+    vertical-align: top;
     border: 1px solid rgba($black, .1);
   }
 }

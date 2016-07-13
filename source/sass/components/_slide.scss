@@ -41,6 +41,7 @@ Markup:
 
 Styleguide 3.5
 */
+
 .b-slide {
     background-color: $black;
     color: $white;
@@ -61,8 +62,6 @@ Styleguide 3.5
 
     p { font-weight: 300;}
     p a { text-decoration: underline; }
-
-
 
     .e-slider-index {
         > span {
@@ -86,14 +85,10 @@ Styleguide 3.5
             text-transform: none;
         }
 
-        h2 {
-            font-size: 32px;
+        h2 { font-size: 32px; }
 
-
-        }
         h3 { font-size: 20px; }
         h3 strong { font-weight: 600; }
-
     }
 
     .e-action-group {

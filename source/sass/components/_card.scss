@@ -35,6 +35,7 @@ Markup:
 
 Styleguide 3.7
 */
+
 .e-card {
     display: inline-block;
     .e-card-inner {
@@ -66,12 +67,10 @@ Styleguide 3.7
             background-repeat: no-repeat;
         }
 
-
         &:hover {
             box-shadow: 0 0 12px $gray-30;
         }
     }
-
 
     &.m-orange .e-card-inner    { background-color: $orange; }
     &.m-blue .e-card-inner      { background-color: $blue; }

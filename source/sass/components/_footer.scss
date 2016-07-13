@@ -40,6 +40,7 @@ Markup:
 
 Styleguide 5.3
 */
+
 .b-footer {
     background-color: $gray-80;
     color: $white-80;
@@ -102,7 +103,6 @@ Styleguide 5.3
         @extend .u-transition;
         text-align: left;
 
-
         @include breakpoint($desktop) {
             display: inline-block;
             width: 49%;
@@ -112,7 +112,6 @@ Styleguide 5.3
             color: $white;
             background-color: $white-10;
             @extend .u-transition;
-
         }
     }
 }
@@ -121,7 +120,6 @@ Styleguide 5.3
     background-color: $gray-70;
     padding: 20px;
     text-align: center;
-
 
     @include breakpoint($desktop) {
         text-align: left;
@@ -183,4 +181,3 @@ Styleguide 5.3
         }
     }
 }
-
