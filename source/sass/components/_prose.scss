@@ -112,31 +112,3 @@
   }
 }
 
-// Table Component
-
-table {
-  font-family: $main-font;
-  font-size: 1rem;
-  font-weight: 300;
-
-  p {
-    margin-top: .3em;
-    margin-bottom: .6em;
-    line-height: 1.4em;
-  }
-
-  th, td {
-    padding: 5px 10px;
-  }
-
-  th {
-    background-color: $main-color;
-    color: $white;
-    text-align: left;
-  }
-
-  td {
-    vertical-align: top;
-    border: 1px solid rgba($black, .1);
-  }
-}

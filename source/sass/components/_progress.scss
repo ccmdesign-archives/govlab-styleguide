@@ -1,5 +1,5 @@
 .b-progress {
-    @include breakpoint($mobile-only) {
+    @include breakpoint($small-only) {
         border: 1px solid $white-40;
         padding: 3px 0;
         display: block;
@@ -8,7 +8,7 @@
         margin-top: 20px;
     }
 
-    @include breakpoint($desktop) {
+    @include breakpoint($large) {
         width: 100%;
         border-bottom: 1px solid $white-20;
         margin-top: 70px;
@@ -18,12 +18,12 @@
     }
 
     &:before {
-        @include breakpoint($mobile-only) {
+        @include breakpoint($small-only) {
             color: $white-60;
             content: 'Progress: ';
         }
 
-        @include breakpoint($desktop) {
+        @include breakpoint($large) {
             color: $white-30;
             content: 'Progress';
             position: absolute;
@@ -36,7 +36,7 @@
     }
 
     &:after {
-        @include breakpoint($desktop) {
+        @include breakpoint($large) {
             position: absolute;
             content: "";
             border-bottom: 1px solid $white-50;
@@ -49,7 +49,7 @@
         color: $white-60;
         display: none;
 
-        @include breakpoint($desktop) {
+        @include breakpoint($large) {
             position: absolute;
             margin-top: -35px;
             display: block;
@@ -59,19 +59,19 @@
 
     span:nth-child(1):before {
         content: "Define";
-        @include breakpoint($desktop) { right: 90%; }
+        @include breakpoint($large) { right: 90%; }
     }
     span:nth-child(2):before {
         content: "Prototype";
-        @include breakpoint($desktop) { right: 65%; }
+        @include breakpoint($large) { right: 65%; }
     }
     span:nth-child(3):before {
         content: "Test & Iteration";
-        @include breakpoint($desktop) { right: 30%; }
+        @include breakpoint($large) { right: 30%; }
     }
     span:nth-child(4):before {
         content: "Complete";
-        @include breakpoint($desktop) { right: 0; }
+        @include breakpoint($large) { right: 0; }
     }
 
     &.m-define    span:nth-child(1):before,
@@ -80,7 +80,7 @@
     &.m-complete  span:nth-child(4):before {
         color: $white-90;
 
-        @include breakpoint($mobile-only) {
+        @include breakpoint($small-only) {
             display: inline-block;
             font-weight: 600;
         }

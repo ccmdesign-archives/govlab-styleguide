@@ -49,7 +49,7 @@ Styleguide 3.5
 
     > header {
         padding: 20px 0;
-        @include breakpoint($mobile-only) { text-align: center; }
+        @include breakpoint($small-only) { text-align: center; }
     }
 
     > header > h4 {
@@ -57,7 +57,7 @@ Styleguide 3.5
         text-transform: uppercase;
         letter-spacing: 1px;
 
-        @include breakpoint($tablet) { margin-top: 0; }
+        @include breakpoint($medium) { margin-top: 0; }
     }
 
     p { font-weight: 300;}
@@ -96,7 +96,7 @@ Styleguide 3.5
     }
 
     .e-action {
-        @include breakpoint($mobile-only) { margin-bottom: 10px; }
+        @include breakpoint($small-only) { margin-bottom: 10px; }
     }
 }
 

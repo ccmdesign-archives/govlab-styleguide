@@ -7,37 +7,13 @@ $white: #fff;
 $main-font: 'proxima-nova', sans-serif;
 $secondary-font: "freight-text-pro",sans-serif;
 
+
+
+
 body {
-  font-family: $main-font;
-  font-size: 16px;
-  line-height: 1.62;
-  font-weight: 400;
-  color: $text-color;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
 }
 
-// Form Reset
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    border: 0;
-}
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
-
-// Typography
-
-h1 {
-  font-size: 4rem;
-  line-height: 1;
-  margin-bottom: .5em;
-  margin-top: .5em;
-  font-weight: 100;
-}

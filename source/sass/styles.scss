@@ -10,12 +10,15 @@
 
 /* importing base */
 @import 'components/base';
+@import 'components/typography';
+@import 'components/table';
+@import 'components/form';
 
 // components
 @import 'components/prose';
-@import 'components/typography';
+
 @import 'components/button';
-@import 'components/form';
+
 @import 'components/search';
 @import 'components/off-canvas';
 @import 'components/topnav';

@@ -15,18 +15,9 @@
         background-color: rgba($black, .2);
     }
 
-    @include breakpoint($mobile-only) {
-        // display: block;
-        text-align: center;
-
-        & ~ .b-button {
-            margin: 10px 0;
-        }
-    }
-
     i {
         margin-left: 15px;
-        vertical-align: bottom;
+        vertical-align: middle;
         float: right;
     }
 }
@@ -36,48 +27,46 @@
     float: none;
 }
 
+
+.button--purple,
+.button--teal,
+.button--orange,
+.button--blue,
+.button--black,
+.button--naked {
+    color: $white;
+    &:hover { color: $white; }
+}
+
+
 .button--purple {
     background-color: $purple;
-    color: $white;
-
     &:hover { background-color: darken($purple, 6); }
 }
 
 .button--teal {
     background-color: $teal;
-    color: $white;
-
     &:hover { background-color: darken($teal, 4); }
 }
 
 .button--orange {
     background-color: $orange;
-    color: $white;
-
     &:hover { background-color: darken($orange, 4); }
 }
 
 .button--blue {
     background-color: $blue;
-    color: $white;
-
     &:hover { background-color: darken($blue, 4); }
 }
 
 .button--black {
     background-color: rgba($black, .8);
-    color: $white;
-
     &:hover { background-color: rgba($black, .9); }
 }
 
 .button--naked {
     background-color: transparent;
-    color: $white;
-
-    @include breakpoint($desktop) { margin-left: -10px; }
-    // ToDo: understand why this style is not working
-    // @include breakpoint($mobile-only) { background-color: $gray-20; }
+    @include breakpoint($large) { margin-left: -10px; }
 
     &:hover {
         background-color: rgba($black, .2);

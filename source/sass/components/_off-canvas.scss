@@ -10,8 +10,8 @@
     -webkit-flex-flow: column;
     flex-flow: column;
 
-    @include breakpoint($tablet) { left: -48%; }
-    @include breakpoint($desktop) { left: -28%; }
+    @include breakpoint($medium) { left: -48%; }
+    @include breakpoint($large) { left: -28%; }
 
     @extend .u-transition;
 
@@ -19,8 +19,8 @@
         left: 0;
         right: 70px;
 
-        @include breakpoint($tablet) { right: 52%; }
-        @include breakpoint($desktop) { right: 72%; }
+        @include breakpoint($medium) { right: 52%; }
+        @include breakpoint($large) { right: 72%; }
     }
 
     a {

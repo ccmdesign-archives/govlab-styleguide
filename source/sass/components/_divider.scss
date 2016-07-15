@@ -9,11 +9,9 @@
     :last-child { margin-bottom: 0; }
 
     h1 {
-        text-transform: none;
-        margin-bottom: 0;
-        @include breakpoint($tablet) {
-            font-size: 40px;
-        }
+        font-size: 2.2rem;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     h1 + h2 {
@@ -22,7 +20,7 @@
         font-weight: 400;
         color: $white-40;
         text-transform: uppercase;
-        @include breakpoint($tablet) { font-size: 22px; }
+        @include breakpoint($medium) { font-size: 22px; }
     }
 
     h2 {

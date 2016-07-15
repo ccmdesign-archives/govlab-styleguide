@@ -27,6 +27,14 @@
   border-radius: 50%;
 }
 
+
+.js-hidden { display: none !important; }
+.js-active { display: block !important; }
+
+.js-body-modal-active { overflow: hidden; }
+.js-modal-active { display: block !important; }
+
+
 // Overlay
 #overlay {
   position: fixed;
@@ -36,9 +44,11 @@
   right: 0;
   z-index: 10;
   display: none;
-  opacity: .1;
-
-  &--active { display: block; }
+  opacity: .7;
+  
+  &.js-active {
+    background-color: $black;
+  }
 }
 
 .u-clearfix:after {
