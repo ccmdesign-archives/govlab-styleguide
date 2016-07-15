@@ -19,13 +19,8 @@ $(document).ready(function() {
         });
     });
 
-    $('.m-prev').click(function() {
-        $(this).closest('.e-testimonial-item').slick('slickPrev');
-    });
+    
 
-    $('.m-next').click(function() {
-        $(this).closest('.e-testimonial-item').slick('slickNext');
-    });
 
     $('.language-markup').each(function() {
         var $obj = $($(this).data('markup'));

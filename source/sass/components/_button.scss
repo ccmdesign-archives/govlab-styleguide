@@ -1,52 +1,4 @@
-/*
-Buttons
-
-<code>b-button</code> provides a very clean looking standard button class.
-The buttons support automagic styling of icons from the <a href="https://www.google.com/design/icons/" target="_blank">Material Icons Library</a>.
-
-Markup:
-<!-- #fullwidth -->
-<div class="b-page-section">
-    <div class="row">
-        <a href="#" class="b-button">Text</a>
-        <a href="#" class="b-button m-purple">Text <i class="material-icons">arrow_forward</i></a>
-        <a href="#" class="b-button m-teal">Learn More<i class="material-icons">add</i></a>
-        <a href="#" class="b-button m-orange">Send<i class="material-icons">send</i></a>
-        <a href="#" class="b-button m-blue">Confirm<i class="material-icons">check</i></a>
-        <a href="#" class="b-button m-black">Delete<i class="material-icons">close</i></a>
-        <a href="#" class="b-button m-icon-only m-black"><i class="material-icons">close</i></a>
-    </div>
-</div>
-<div class="b-page-section m-black">
-    <div class="row">
-        <a href="#" class="b-button">Text</a>
-        <a href="#" class="b-button m-purple">Text <i class="material-icons">arrow_forward</i></a>
-        <a href="#" class="b-button m-teal">Learn More<i class="material-icons">add</i></a>
-        <a href="#" class="b-button m-orange">Send<i class="material-icons">send</i></a>
-        <a href="#" class="b-button m-blue">Confirm<i class="material-icons">check</i></a>
-        <a href="#" class="b-button m-black">Delete<i class="material-icons">close</i></a>
-        <a href="#" class="b-button m-icon-only m-black"><i class="material-icons">close</i></a>
-    </div>
-</div>
-<div class="b-divider m-purple">
-    <div class="row">
-        <a href="#" class="b-button m-naked">Naked button <i class="material-icons">arrow_forward</i></a>
-    </div>
-</div>
-
-.m-purple    - Uses $purple background
-.m-teal      - Uses $teal background
-.m-orange    - Uses $orange background
-.m-blue      - Uses $blue background
-.m-black     - Uses $black background
-.m-icon-only - For buttons without any text, can be used with any color modifier
-.m-naked     - Transparent style, will blend in with background of parent element
-.m-disabled - Will disable button so there is no click action
-
-Styleguide 3.1
-*/
-
-.b-button {
+.button {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -79,47 +31,47 @@ Styleguide 3.1
     }
 }
 
-.b-button.m-icon-only i {
+.button--icon-only i {
     margin-left: 0;
     float: none;
 }
 
-.b-button.m-purple {
+.button--purple {
     background-color: $purple;
     color: $white;
 
     &:hover { background-color: darken($purple, 6); }
 }
 
-.b-button.m-teal {
+.button--teal {
     background-color: $teal;
     color: $white;
 
     &:hover { background-color: darken($teal, 4); }
 }
 
-.b-button.m-orange {
+.button--orange {
     background-color: $orange;
     color: $white;
 
     &:hover { background-color: darken($orange, 4); }
 }
 
-.b-button.m-blue {
+.button--blue {
     background-color: $blue;
     color: $white;
 
     &:hover { background-color: darken($blue, 4); }
 }
 
-.b-button.m-black {
-    background-color: $black;
+.button--black {
+    background-color: rgba($black, .8);
     color: $white;
 
     &:hover { background-color: rgba($black, .9); }
 }
 
-.b-button.m-naked {
+.button--naked {
     background-color: transparent;
     color: $white;
 
@@ -133,7 +85,7 @@ Styleguide 3.1
     }
 }
 
-.b-button.m-disabled{
+.button--disabled{
   pointer-events: none;
   opacity: 0.5;
 }
