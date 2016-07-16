@@ -76,16 +76,35 @@
                     <span class="button js-open-modal">Open Modal</span>
                     
                     <div class="modal js-target-modal">
-                        <div class="modal__content">
+                        <header class="modal__header">
                             <i class="modal__close material-icons js-close-modal">close</i>
+                            <h1 class="modal__title">Modal title with a deceny number of characters</h1>
+                        </header>
+                        <section class="modal__content">
                             <h2>Title for modal</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione, reprehenderit veniam veritatis voluptatem perferendis nulla? Sint eveniet necessitatibus vel saepe, consequuntur veritatis laborum perspiciatis, reprehenderit, esse rem aut omnis.</p>
                             <h3>Title for modal</h3>
                             <p>Sint eveniet necessitatibus vel saepe, consequuntur veritatis laborum perspiciatis, reprehenderit, esse rem aut omnis.</p>
                             <h4>Title for modal</h4>
+                            <form action="">
+                                <input type="text" placeholder="Sample form">
+                                <input type="text" placeholder="Sample form">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <button>Submit</button>
+                            </form>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione, reprehenderit veniam veritatis voluptatem perferendis nulla?</p>
-                            <p><a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a></p>
-                        </div>
+                            <h3>Title for modal</h3>
+                            <p>Sint eveniet necessitatibus vel saepe, consequuntur veritatis laborum perspiciatis, reprehenderit, esse rem aut omnis.</p>
+                            <h4>Title for modal</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione, reprehenderit ve
+                            <h3>Title for modal</h3>
+                            <p>Sint eveniet necessitatibus vel saepe, consequuntur veritatis laborum perspiciatis, reprehenderit, esse rem aut omnis.</p>
+                            <h4>Title for modal</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione, reprehenderit ve
+                        </section>
+                        <footer class="modal__controls">
+                            <a class="button js-close-modal" href="#">OK</a> <a class="button js-close-modal" href="#">Cancel</a>
+                        </footer>
                     </div>
                 </div>
             </div>
@@ -109,7 +128,7 @@
         </div>
 
         <div id="sticky-code">
-            <div class="sticky js-target-sticky sticky--purple">
+            <div class="sticky js-target-sticky sticky--purple js-active">
                 <div class="row">
                     <div class="column small-12">
                         <i class="material-icons sticky__close js-close-sticky">close</i>
