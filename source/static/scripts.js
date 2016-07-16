@@ -21,7 +21,6 @@ $(document).ready(function() {
 
 
     // Modal Click Behavior
-    
     $('.js-open-modal').click(function() {
         $('.js-target-modal').addClass('js-active');
         $('#overlay').addClass('js-active');
@@ -40,7 +39,19 @@ $(document).ready(function() {
         $('.js-target-sticky').removeClass('js-active');
     });
 
+    // Search Click Behavior
+    $('.js-trigger-search').click(function(e) {
+        e.preventDefault();
+        $(this).parent().addClass('js-active');
+        $('#overlay').addClass('js-active');
+    });
+
+
     
+    
+
+
+    // General Click Behavior for Overlay
     $('#overlay').click(function() {
         $('.js-active').removeClass('js-active');
     });
