@@ -1,0 +1,42 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+    <main role="main">
+        <!-- main content starts here -->
+        <div class="top-section top-section--purple">
+            <div class="row">
+              <div class="medium-12 column">
+                <h1>Special Components</h1>
+                <p class="top-section__tagline">These are less commonly used components, developed for specific projects.</p>
+              </div>
+            </div>
+        </div>
+        <div class="divider">
+          <h1>Progress</h1>
+        </div>
+        <div class="page-section page-section--blue">
+          <div class="row">
+            <div id="progress-code" class="column large-12">
+              <div class="progress progress--complete">
+                <!-- Modifiers: progress--define, progress--prototype, progress--test, progress--complete -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="page-section">
+            <div class="row">
+                <div class="column large-12">
+                    <pre><code class="language-markup" data-markup="#progress-code"></code></pre>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

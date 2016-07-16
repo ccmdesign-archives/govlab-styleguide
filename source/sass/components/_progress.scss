@@ -1,4 +1,4 @@
-.b-progress {
+.progress {
     @include breakpoint($small-only) {
         border: 1px solid $white-40;
         padding: 3px 0;
@@ -49,6 +49,7 @@
         color: $white-60;
         display: none;
 
+
         @include breakpoint($large) {
             position: absolute;
             margin-top: -35px;
@@ -74,11 +75,12 @@
         @include breakpoint($large) { right: 0; }
     }
 
-    &.m-define    span:nth-child(1):before,
-    &.m-prototype span:nth-child(2):before,
-    &.m-test      span:nth-child(3):before,
-    &.m-complete  span:nth-child(4):before {
+    &--define    span:nth-child(1):before,
+    &--prototype span:nth-child(2):before,
+    &--test      span:nth-child(3):before,
+    &--complete  span:nth-child(4):before {
         color: $white-90;
+        font-weight: bold;
 
         @include breakpoint($small-only) {
             display: inline-block;
@@ -86,9 +88,9 @@
         }
     }
 
-    &.m-define:after    { width: 10%;  }
-    &.m-prototype:after { width: 35%;  }
-    &.m-test:after      { width: 70%;  }
-    &.m-complete:after  { width: 100%; }
+    &--define:after    { width: 10%;  }
+    &--prototype:after { width: 35%;  }
+    &--test:after      { width: 70%;  }
+    &--complete:after  { width: 100%; }
 }
 

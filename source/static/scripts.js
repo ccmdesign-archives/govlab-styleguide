@@ -22,9 +22,5 @@ $(document).ready(function() {
     
 
 
-    $('.language-markup').each(function() {
-        var $obj = $($(this).data('markup'));
 
-        $(this).text($obj.html());
-    });
 }); // doc.ready
