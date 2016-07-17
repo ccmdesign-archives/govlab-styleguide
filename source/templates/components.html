@@ -8,27 +8,8 @@
             <h1>Components</h1>
             <h3>Buttons, sliders, tabs, etc.</h3>
         </div>
+
         
-
-        <div class="divider">
-            <h1>Search</h1>
-        </div>
-
-        <div class="page-section">
-            <div class="row">
-                <div class="column large-12">
-                    <p>Search component.  Has js associated with it that allow it to search a site, or WP for example.  Also makes use of the overlay element.</p>
-                    <form class="search search--fixed js-target-search" action="">
-                        <input type="text">
-                        <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
-                    </form>
-                    <!-- .search--negative - negative color scheme for dark backgrounds -->
-                    <!-- .search--fixed - fixed position -->
-                </div>
-            </div>
-        </div>
-
-
 
         <div class="divider">
             <h1>Buttons</h1>
@@ -61,15 +42,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="page-section">
-            <div class="row">
-                <div class="column large-12">
-                    <pre><code class="language-markup" data-markup="#button-code-1"></code></pre>
-                </div>
-            </div>
-        </div>
-
         <div class="divider divider--purple">
             <div class="row">
                 <div id="button-code-3" class="column large-12">
@@ -81,12 +53,61 @@
         <div class="page-section">
             <div class="row">
                 <div class="column large-12">
+                    <pre><code class="language-markup" data-markup="#button-code-1"></code></pre>
                     <pre><code class="language-markup" data-markup="#button-code-3"></code></pre>
                 </div>
             </div>
         </div>
 
-        
+        <div class="divider">
+            <h1>Search</h1>
+        </div>
+
+        <div class="page-section">
+            <div class="row">
+                <div class="column large-12">
+                    <p>Search component.  Has js associated with it that allow it to search a site, or WP for example.  Also makes use of the overlay element.</p>
+                    <div id="search-code">
+                        <form class="search search--fixed js-target-search" action="">
+                            <input type="text">
+                            <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+                        </form>
+                        <!-- .search--negative - negative color scheme for dark backgrounds -->
+                        <!-- .search--fixed - search field will be expanded by default -->
+                    </div>
+
+                    <form class="search js-target-search" action="">
+                        <input type="text">
+                        <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section page-section--black">
+            <div class="row">
+                <div class="column large-12">
+                    <form class="search search--negative search--fixed js-target-search" action="">
+                        <input type="text">
+                        <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+                    </form>
+                    <!-- .search--negative - negative color scheme for dark backgrounds -->
+                    <!-- .search--fixed - fixed position -->
+
+                    <form class="search search--negative js-target-search" action="">
+                        <input type="text">
+                        <input class="js-search-submit js-trigger-search search-trigger" type="submit" value="search">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="page-section">
+            <div class="row">
+                <div class="column large-12">
+                    <pre><code class="language-markup" data-markup="#search-code"></code></pre>
+                </div>
+            </div>
+        </div>
 
         <div class="divider">
             <h1>Modal</h1>
@@ -137,6 +158,238 @@
                 </div>
             </div>
         </div>
+
+            <div class="divider">
+              <h1>Slide</h1>
+            </div>
+
+            <div class="page-section">
+              <div class="row">
+                <div class="column large-12">
+                  <p>Slides can be used to display information about a specific topic; for example, a project or article.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="slide-code">
+            <section id="slide-id" class="slide slide--teal">
+            <!-- MODIFIERS: .slide--purple, .slide--blue, .slide--orange. .slide--teal -->
+              <header class="row">
+                <div class="large-12 column">
+                  <h4>Featured Project</h4>
+                </div>
+              </header>
+              <div class="row slide__content">
+                  <div class="medium-6 column">
+                      <h2 class="slide__project-name">Project Title</h2>
+                      <h3 class="slide__question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, enim adipisci dicta.</h3>
+                  </div>
+                  <div class="medium-6 column">
+                      <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+                      <p>Project description Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+                  </div>
+              </div>
+              <div class="row slide__content">
+                  <div class="medium-6 column">
+                      <div class="slide__action">
+                          <a class="button button--naked" href="./projects.html">All Projects<i class="material-icons">arrow_forward</i></a>
+                      </div>
+                  </div>
+                  <div class="medium-6 column">
+                      <div class="slide__action">
+                          <a class="button button--naked" href="#">Find out more<i class="material-icons">arrow_forward</i></a>
+                      </div>
+                  </div>
+              </div>
+            </section>
+            </div>
+            
+            <div class="page-section">
+              <div class="row">
+                <div class="column large-12">
+                    <pre><code class="language-markup" data-markup="#slide-code"></code></pre>
+                </div>
+              </div>
+            </div>
+
+
+    <div class="divider">
+      <h1>Slider</h1>
+    </div>
+
+    <div class="slider slick">
+      <section id="slide-id" class="slide slide--purple">
+          <header>
+            <div class="row">
+              <div class="column large-12">
+                <h4>Featured Project</h4>  
+              </div>
+            </div>
+          </header>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <h2 class="slide__project-name">Project Title</h2>
+                  <h3 class="slide__question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, enim adipisci dicta.</h3>
+              </div>
+              <div class="column medium-6">
+                  <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+                  <p>Project description Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+              </div>
+          </div>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="./projects.html">All Projects<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="#">Find out more<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id="slide-id" class="slide">
+          <header>
+            <div class="row">
+              <div class="column large-12">
+                <h4>Featured Project</h4>  
+              </div>
+            </div>
+          </header>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <h2 class="slide__project-name">Project Title</h2>
+                  <h3 class="slide__question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, enim adipisci dicta.</h3>
+              </div>
+              <div class="column medium-6">
+                  <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+                  <p>Project description Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+              </div>
+          </div>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="./projects.html">All Projects<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="#">Find out more<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id="slide-id" class="slide slide--teal">
+          <header>
+            <div class="row">
+              <div class="column large-12">
+                <h4>From the Blog</h4>  
+              </div>
+            </div>
+          </header>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <h2>Bloc title Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                  <h3><strong>By: </strong>Claudio Mendonca</h3>
+              </div>
+              <div class="column medium-6">
+                  <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+                  <p>Project description Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+              </div>
+          </div>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="./projects.html">All Projects<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="#">Find out more<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id="slide-id" class="slide slide--orange">
+          <header>
+            <div class="row">
+              <div class="column large-12">
+                <h4>Featured Project</h4>  
+              </div>
+            </div>
+          </header>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <h2 class="slide__project-name">Project Title</h2>
+                  <h3 class="slide__question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, enim adipisci dicta.</h3>
+              </div>
+              <div class="column medium-6">
+                  <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+                  <p>Project description Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+              </div>
+          </div>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="./projects.html">All Projects<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="#">Find out more<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id="slide-id" class="slide slide--blue">
+          <header>
+            <div class="row">
+              <div class="column large-12">
+                <h4>Featured Project</h4>  
+              </div>
+            </div>
+          </header>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <h2 class="slide__project-name">Project Title</h2>
+                  <h3 class="slide__question">Lorem ipsum dolor sit amet, consectetur adipisicing elit, enim adipisci dicta.</h3>
+              </div>
+              <div class="column medium-6">
+                  <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+                  <p>Project description Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
+              </div>
+          </div>
+          <div class="row slide__content">
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="./projects.html">All Projects<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+              <div class="column medium-6">
+                  <div class="slide__action">
+                      <a class="button button--naked" href="#">Find out more<i class="material-icons">arrow_forward</i></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </div>
+
+    <div class="page-section">
+      <div class="row">
+        <div class="column large-12">
+            <p>The code for the slider consists in using a <code>.slider</code> element to wrap multiple <code>slide</code> components. That will automatically trigger the JS and all the extra functionality and styles used by slick.js. We are extending Slick with our own visual styles.</p>
+            <pre><code class="language-markup">
+              &lt;div class="slider"&gt;
+                &lt;div class="slide"&gt;...&lt;/div&gt; &lt;!-- Slide Component --&gt;
+                &lt;div class="slide"&gt;...&lt;/div&gt; &lt;!-- Slide Component --&gt;
+                &lt;div class="slide"&gt;...&lt;/div&gt; &lt;!-- Slide Component --&gt;
+                ...
+              &lt;/div&gt;
+            </code></pre>
+        </div>
+      </div>
+    </div>
 
         <div class="divider">
             <h1>Sticky</h1>

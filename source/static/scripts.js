@@ -47,13 +47,28 @@ $(document).ready(function() {
     });
 
 
-    
-    
-
-
     // General Click Behavior for Overlay
     $('#overlay').click(function() {
         $('.js-active').removeClass('js-active');
+    });
+
+
+    // Slider
+
+    $('.slider').slick({
+        arrows: true,
+        draggable: false,
+        swipeToSlide: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    draggable: true,
+                }
+            }
+        ]
     });
 
 
