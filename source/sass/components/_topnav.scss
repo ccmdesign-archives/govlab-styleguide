@@ -1,12 +1,3 @@
-.u-button {
-    padding: 12px 15px;
-    cursor: pointer;
-
-    &:hover {
-        background-color: rgba($white, .1);
-    }
-}
-
 .top-bar {
     background-color: $main-color;
     @extend .u-clearfix;
@@ -15,14 +6,17 @@
     display: flex;
 
     &__button {
-        @extend .u-button;
         @extend .u-material-icons;
         color: $white;
+        padding: 12px 15px;
+        cursor: pointer;
+
+        &:hover { background-color: rgba($white, .1); }
     }
 
     &__logo {
         flex: 1;
-        padding: 4px;
+        padding: 8px;
         margin: 0;
         display: inline-block;
         height: 100%;

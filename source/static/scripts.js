@@ -46,10 +46,17 @@ $(document).ready(function() {
         $('#overlay').addClass('js-active');
     });
 
+    // Main Menu Click Behavior
+    $('.js-trigger-menu').click(function(e) {
+        $(this).next().addClass('js-active-menu');
+        $('#overlay').addClass('js-active');
+    });
+
 
     // General Click Behavior for Overlay
     $('#overlay').click(function() {
         $('.js-active').removeClass('js-active');
+        $('.js-active-menu').removeClass('js-active-menu');
     });
 
 
