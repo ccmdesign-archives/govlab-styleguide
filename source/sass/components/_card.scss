@@ -1,3 +1,58 @@
+.card-1 {
+    padding: 7px;
+    border: 1px solid rgba($black, .1);
+    margin-bottom: 30px;
+
+    &__content {
+        text-align: left;
+        padding-top: 42%;
+        color: $white;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0;
+        padding: 5% 20px 0;
+        background-color: rgba($white, .1);
+        // border-top: 1px solid rgba($white, .2);
+
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin: 0;
+        font-weight: normal;
+        background-color: rgba($white, .1);
+        padding: 0 20px 10px;
+    }
+}
+
+.card-1--purple .card-1__content { background-color: $purple; }
+.card-1--teal .card-1__content { background-color: $teal; }
+.card-1--orange .card-1__content { background-color: $orange; }
+.card-1--blue .card-1__content { background-color: $blue; }
+.card-1--black .card-1__content { background-color: rgba($black, .8); }
+.card-1--red .card-1__content { background-color: $red; }
+.card-1--green .card-1__content { background-color: $green; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 Cards
 
