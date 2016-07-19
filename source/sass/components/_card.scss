@@ -28,6 +28,21 @@
     }
 }
 
+.card-2 {
+    @extend .card-1;
+
+    &__content {
+        @extend .card-1__content;
+        background-image: url("../images/bg-image-sample.png");
+        background-size: cover;
+        padding-top: 65%;
+        background-position: center;
+
+        h1, h2 { background-color: rgba($black, .5); }
+        h2 {text-transform: none;}
+    }
+}
+
 .card-1--purple .card-1__content { background-color: $purple; }
 .card-1--teal .card-1__content { background-color: $teal; }
 .card-1--orange .card-1__content { background-color: $orange; }

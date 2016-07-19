@@ -26,7 +26,7 @@ gulp.task('sass', function() {
   // Gets all files ending with .scss in source/sass
   return gulp.src('source/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest('public/styles'))
     .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -70,3 +70,9 @@ gulp.task(
 );
 
 gulp.task('default', ['watch']);
+
+
+
+
+
+
