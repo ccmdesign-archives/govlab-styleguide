@@ -3,6 +3,7 @@ var del             = require('del'),
     sass            = require('gulp-sass'),
     shell           = require('gulp-shell'),
     uglify          = require('gulp-uglify'),
+    ghPages         = require('gulp-gh-pages'),
     imagemin        = require('gulp-imagemin'),
     sourcemaps      = require('gulp-sourcemaps'),
     browserSync     = require('browser-sync'),
@@ -64,16 +65,19 @@ gulp.task('nunjucks', function () {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task(
-  'git-push',
-  shell.task(['git subtree push --prefix public origin gh-pages'])
-);
+gulp.task('push-gh-master', shell.task(['git push origin master']));
+
+gulp.task('push-gh-pages', function () {
+  return gulp.src('public/**/*')
+    .pipe(ghPages({ force: true }));
+});
 
 gulp.task('deploy', function (callback) {
   runSequence(
     'clean',
     ['sass', 'js', 'image', 'nunjucks', 'vendor'],
-    'git-push',
+    'push-gh-master',
+    'push-gh-pages',
     callback
   );
 });
